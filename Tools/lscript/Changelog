@@ -1,0 +1,430 @@
+2.1.5
+Remade installation menu, now you can select multiple tools at once.
+Fixed no output when handshake scanning.
+Fixed wifiphisher launch when only 1 interface available.
+Added option to select the entire network as target at auto-exploit browser menu.
+Angry IP updated.
+Fixed routersploit installation.
+Added new wififb menu that auto-saves captured credentials, triggered only via ks.
+Added new error for auto-fix, when pyrit handshake verification always is bad.
+Auto exiting deauth attack when specified num of deauths completed.
+Option to not ask for confirmation to remove and reinstall already installed tools.
+Improved "local IPs and gateways" feature.
+Added option to autocheck for handshake every x seconds.
+Added option to copy captured handshake to desktop after validating.
+Go to gateway's IP in browser by typing 'gate'.
+Added Yuki Chan to website tools.
+Fixed install.sh error in gnome-terminal command.
+Fixed airodump's \x00\x00\x00 bug on output when scanning. 
+Added default wififb names.
+Fixed fluxion's installation.
+Added option to test arp-scan IPs with eternalblue exploit.
+Fixed unlock WPS menu errors.
+Fixed Fluxion launch error due to latest fluxion version.
+Fixed Kwetza installation typo.
+Fixed many bugs, but not even half.
+
+
+2.1.4
+New WPS feature added: Pixie loop till pin found.
+New WPS feature added: Unlock WPS for APs with locked WPS.(beta)
+New feature: Bruteforce router's login password.
+Remade old WEP menu.
+Added option to re arp-scan network.
+Added option to show bandwidth via iftop tool.
+Fixed wash output if network has space in it.
+Improved geolocation feature.
+Fixed arp-scan error.
+Fixed major issue on handshake scan, sometimes APs disappearing.
+Fixed minor error in errors menu.
+Added description to information gathering tools.
+Improved descriptions on wifi tools.
+Added two options to validate handshake.
+Added netool-toolkit to wifi tools.
+Added website tools menu.
+Added Leviathan to website tools.
+Added VMR and Airgeddon to WPS menu.
+Added SQLmap automated script to website tools and banner.
+Added setting to change the interface for arp-scan feature.
+Added checking if interface available before scan.
+Added patator to other tools.
+Added Evil-Droid to remote access tools and keyboard shortcuts.
+Improved pixie dust loop attack.
+Added NoSQLMap to website tools and keyboard shortcuts.
+Added option in settings to change iftop's interface.
+Add e.g. to LHOST on eternalblue.
+
+
+
+2.1.3
+Added Geolocate IP feature.
+Added fully automatic beef + mitmf browser injection.
+Added automated local IPs & gateways print feature.
+Added Beef to remote access tools and keyboard shortcuts.
+Added option to verify the handshake with pyrit too from deauth menu.
+Added option to deauth all, wait and loop.
+Added ngrok installation option from main menu.
+Fixed error when going back from creating a keyboard shortcut.
+Fixed angry ip scanner keyboard shortcut.
+Changed to new gnome-terminal command.
+Added delay option to WPS bruteforce and fixed errors.
+Added red color when WPS is locked on an AP.
+Added error message when selecting a WPS-locked AP.
+Added setting to enable --ingore-negative-one in deauthing.
+Added option to manually type a MAC to deauth.
+Added return when starting/stopping services.
+Added choosing if you want to keep a bad handshake.
+Added cowpatty handshake check on deauth.
+Added setting to specify another MAC address for when starting monitor.
+Added samples to banner's changing color option in settings.
+
+
+
+2.1.1
+Fixed interfaces not saved after update.
+Fixed Terms of use not saved after update.
+Added delay after cupp wordlist generation.
+Fixed tool's installation in WPS menu.
+Added Gloom-Framework to wifi tools and keyboard shortcuts.
+Check handshake name if already exists.
+Added handshake check option in deauth menu.	
+Added automated install of nWatch requirements due to error reports.
+Added Arcanus to wifi tools and keyboard shortcuts.
+Added automated MSFPC script to remote access tools.
+Added automated morphHTA script to remote access tools.
+Added LFISuite to remote access tools and keyboard shortcuts.
+Added automated UniByAv script to remote access.
+Added automated demiguise script to remote access.
+Added DKMC to remote access tools and keyboard shortcuts.
+Added SecHub to wifi tools and keyboard shortcuts.
+Added color to pyrit handshake validation output.
+
+
+
+2.1.0
+Fixed error in deauth when selecting a non existing station number.
+Fixed error when checking if monitor enabled.
+Added support for ALFA AWUS036ACH when checking if monitor enabled.
+Added Koadic tool to remote access and keyboard shortcuts.
+Added Empire tool to remote access and keyboard shortcuts.
+Added Meterpreter_Paranoid_Mode tool to remote access and keyboard shortcuts.
+Added Dr0p1t-Framework tool.
+Added Dr0p1t-Framework automation script to remote access.
+Added Wifi-Pumpkin in wifi tools and keyboard shortcuts.
+Added Veil in remote access tools and keyboard shortcuts.
+Added Leviathan in remote access tools and keyboard shortcuts.
+Added FakeImageExploiter to remote access tools.
+Added Avet to remote access tools.
+Added complete fix for apache2 failed to start error.
+Added latest changelog view at every update.
+Fixed no shortcuts saving after update error.
+Fixed settings not saved after update.
+
+
+
+2.0.9
+Fixed error in handshake menu line 59.
+Added Findsploit to metasploit menu.
+Fixed minor mistakes with handshake menu.
+Handshake deauth improved.
+Added auto-sorting of connected clients in deauth.
+Added option to select which client to disconnect.
+Added blue color for WEP ap's on handshake menu.
+Added option to check multiple hosts for eternalblue.
+Fixed minor issue with ngrok.
+Fixed 'Found -6 clients error' in deauth.
+Fixed 'No networks found' after unsuccessful capture.
+Added Howdoi tool in banner.
+Added automated Howdoi settings in settings menu.
+Added operative-framework to information gathering tools.
+Improved AP select in handshake menu(-le -ge).
+Added support for ALFA AWUS036ACH wireless USB adapter.
+Added netattack2 to wifi tools.
+Added operative-framework and netattack2 to keyboard shortcuts.
+
+
+
+2.0.8
+Removed delay from donation menu to main menu.
+Added option to change logo color in settings.
+Fixed typo in keyboard shortcuts.
+Added delay in info tools.
+Fixed error in keyboard shortcuts line 4028.
+Fixed error file not found in handshake menu.
+Fixed error when launching cupp.
+Added bleachbit to other tools + to installation menu.
+Added VMR MDK in wifi tools + to installation menu.
+
+
+
+2.0.7
+Improved start/stop options.
++Added color to 'Done'.
++Removed delay if everything is ok.
+Added nessus start/stop (if you have it already installed).
+Added new fix to errors menu.
+Fixed huge error with new installation method.
+
+
+
+2.0.6
+Added Kwetza (payload to apk) to remote access tools.
+Added Kwetza automated script.
+Fixed small error when cleaning handshake.
+Removed boopsuite from install/reinstall.
+Fixed/improved code in WPS cracking menu.
+Fixed delay when going back from ngrok to main menu.
+Fixed install.sh error.
+Moved the installation of all tools into functions.
+Added option to install every tool when being launched but not installed already.
+Added settings menu for future features.
+Improved all 'if' statements.
+Changed all 'back)' options with 'b)'.
+Added indication if tools in WPS menu are not installed.
+
+
+
+2.0.5
+Added option to clean the handshake after being verified.
+Automation script for bully.
+Check if bully is installed.
+Check if wifiautopwner is installed.
+Improved code.
+Added error message when no networks found in wash/airodump scan.
+Added ngrok to downloads.
+Added ngrok automation.
+Added automated payload genaration for Shellter intergration.
+
+
+
+2.0.4
+Cupp moved to other tools.
+Added delay to wifi tools.
+Fixed eternal scanner not installed error.
+Added donation option.
+Added shellter to keyboard shortcuts.
+
+
+
+2.0.3
+Added Dagon automation script to other tools.
+Added LALIN to other tools.
+Added LALIN to keyboard shortcuts.
+Added error when trying to change interface that is not available.
+Added knockmail to infoga tools.
+
+
+
+2.0.2
+Improved change mac feature.
+Added red color to wirelessinterface if not available.
+Added warning to installing u/i.
+Added Eaphammer tool to install/reinstall.
+Added new fix in errors.
+Added Eaphammer automation script.
+Added services toggle shortcuts in ks) 2).
+Fixed wifiphisher installation.
+Added a backup way to seatch for public ip if one fails.
+Added close terminal when typing exit.
+
+
+2.0.1
+Improved layout of install/reinstall tool menu.
+Added Infoga to information gathering tools.
+Public ip error report added.
+Fixed anonym8 disabling error.
+Fixed last options error in deauth menu.
+Added nWatch to wifi tools and to keyboard shortcuts.
+Added LICENSE file.
+Added Eternal scanner to wifi tools and to keyboard shortcuts.
+
+
+2.0.0
+Winpayloads added to Remote access tools - Generate undetectable payloads.
+Added ability to choose another AP without having to scan again in handshake menu.
+Improved deauth feature in handshake menu.
+Added new deauth option,when capturing on a file.Deauth every client seperately.
+Added shellter tool in remote access menu.
+Added 1 more fix in errors menu.
+Fixed error in metasploit - payload name.
+Added support for all payloads in msfvenom automation.
+Improved listeners feature in metasploit menu.
+Added CHAOS to keyboard shortcuts.
+Added routersploit to wifi tools and to keyboard shortcuts.
+
+
+1.9.9
+Added information gathering menu in tools.
+Improved code
+Added ReconDog in information gathering tools menu
+Added RED HAWK in information gathering tools menu
+Added Sniper in information gathering tools menu
+Fixed anonym8 not installed error
+Fixed error in code on install/reinstall tools manu
+Added ReconDog to shortcuts
+Added RED HAWK to shortcuts
+Removed auto installation of all tools in installed
+
+1.9.8
+Improved handshake feature
+Added echoing the handshake directory
+Added an error fix in errors menu
+Improved code in main menu
+Fixed layout in main manu when interface names are different
+
+
+1.9.7.1
+Fixed tiny error when launching script
+
+1.9.7
+Added open networks in handshake menu
+Improved tools menu
+
+1.9.6
+Added Handshake clean option
+Improved WPS PIN cracking code
+Improved Handshake feature
+
+
+1.9.5
+Added handshake automation like fluxion.No more copy-paste mac and channel
+Added more functions,code easier to read.
+Eternalblue added '0' target
+Added eternalblue checking in hidden shortcuts
+
+
+1.9.4
+Added two way handshake validation
+Custom shortcuts now will not be deleted when updating
+Fixed typos etc
+
+
+1.9.3.2
+Spoofed email fixes and additions
+Added changelog to hidden shortcuts
+
+
+1.9.3.1
+quick installer fix
+
+
+1.9.3
+Changed script's layout
+Added better locating on installer when a tools is already installed
+Added Spoof EMAIL feature
+Added more functions to code.Easier to read. 32 functions
+More changes to code 
+
+
+1.9.2
+Added more functions to code.Easier to read.
+Replaced 4nonimizer with anonym8
+Added option to create a listener when creating a payload
+Added encoder to metasploit payload creation
+Added msfconsole launcher and msfupdate to metasploit menu
+Added hidden shortcuts feature
+Added eternalblue exploit automation in hidden features
+Added Angry IP Scanner to wifi tools
+Option to autostart monitor mode when not already and needed
+Scan for networks on spesific channel option
+
+
+1.9.1
+Improved code when going back on navigation manus
+Added support for all wireless interface names
+Added many functions and improved code
+Added hidden shortcuts menu
+
+
+1.9
+Added option to install/reinstall a tool within lscript
+Huge code change on the installer, now lscript installs first, then the tools,only if you want
+Added openvas to Tools, NOT installed by default
+Added TheFatRat to Remote access
+Improved code on keyboard shortcuts
+Added Metasploit listener creation and saving.Metasploit automation.
+
+
+
+1.8
+Massive update to installer(updates now are installed x100 faster)
+"7) View your Public IP" option now loads a lot faster
+Added "back" option to menus for easier navigation
+Added custom keyboard shortcuts option
+Added handshake validation
+Added site clonning + dnsspoofing in MITM scripts
+Added bully wps tool
+Added WiFi autopwner toolT
+Added Zirikatu payload generator
+Added view changelog option
+Added metasploit payload creation automation
+Latest fluxion added
+Improved code in menus(added while loops)
+Improved code, many functions added
+Improved code, more default variables for easy and fast changes
+
+1.7
+Added mdk3 deauth method
+Removed mac changing of eth0 when typing "start"
+Added deauth option even for no file capture
+Fluxion updated!
+Added websploit wifi tool
+Added new fix in "errors"
+Added Pupy to remote access
+
+1.6
+Fixed BeeLogger install error
+Added sslstrip2
+Added dns2proxy
+Added MITM password sniffing automation
+Replaced anonym8 with anonsurf
+Replaced torghost with 4nonimizer
+
+
+1.5
+organised some code
+fixed random bugs
+fixed mistake when selecting xerxes dos tool
+checking if monitor mode enabled on options 10 11 12
+checking if monitor mode disabled on option 7
+
+
+
+1.4
+Fixed typos
+Updated installer 
+Added xterm bottom right position when deauthing on handshake capture
+Added pixie dust WPS pin cracking
+Changed WPS pin cracking code
+Improved position of new gnome-terminals on handshake and WPS pin finding features
+Improved update feature , testing connection before updating
+
+
+1.3
+Fixed colors on interface selection
+Added "Main menu" and "Exit" on interface selection
+Added option to not create a file on handshake capture
+Added .csv and .netxml file cleanup on handshake capture
+Fixed typo on install.sh
+
+1.2
+removed shARP as it has problems
+added Xerxes DoS tool
+added ezsploit tool on remote access
+added ezsploit to installer
+added Katana framework on wifi tools
+added Katana framework on installer
+added wifiphisher compatibility if you only have one wlan inteface
+added airgeddon to wifi tools
+added airgeddon to installer
+
+0.3
+added wifite to WEP hacking
+added shARP network defender on Tools
+added shARP installation to install.sh
+added mdk3-master to Tools
+added mdk3-master to install.sh
+added wash error on error-fixing (type "errors")
+
+0.2
+Added ghost phisher tool
