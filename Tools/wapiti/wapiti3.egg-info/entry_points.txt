@@ -1,0 +1,4 @@
+[console_scripts]
+wapiti = wapitiCore.main.wapiti:wapiti_main
+wapiti-getcookie = wapitiCore.main.getcookie:getcookie_main
+
