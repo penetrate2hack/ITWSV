@@ -1,0 +1,12 @@
+sslyze
+wafw00f
+droopescan
+argparse
+netaddr
+dnspython
+requests
+beautifulsoup4
+prettytable
+progressbar
+configparser
+parse
