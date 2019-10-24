@@ -1,0 +1,5 @@
+Wapiti includes a convenience copy of jquery in
+wapitiCore/report_template/js/jquery-*.min.js
+and a wapitiCore/report_template/js/kube.min.js
+without the source code.
+For these reasons the source is repacked.

@@ -1,0 +1,16 @@
+This package differs from upstream in the following ways:
+
+ - It provides wapiti, wapiti-lswww and wapiti-getcookie commands to perform
+   the needed actions.
+ - The Nikto plugin is disabled by default because the database file used
+   contains a notice that forbids use of the file with anything other than
+   the full Nikto package without written permission. Users that have
+   received permission from the distributor of the database can install
+   the db_tests file in /usr/share/wapiti/config/attacks/nikto_db. If you
+   have the nikto package installed this can be done with:
+   ln -s /var/lib/nikto/plugins/db_tests /usr/share/wapiti/config/attacks/nikto_db
+
+Due to a limitation in which the reports are generated the reports are
+not opened correctly when opening in Chromium.
+
+See the file example.txt for example usage information.

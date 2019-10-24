@@ -1,0 +1,18 @@
+Description: Remove jquery from sources.
+ This allows the package to be rebuilt twice, since SOURCES.txt is generated at build time
+Author: Gianfranco Costamagna <locutusofborg@debian.org>
+Bug-Debian: http://bugs.debian.org/700556
+
+Origin: debian
+Forwarded: not-needed
+Last-Update: 2018-09-25
+
+--- a/wapiti3.egg-info/SOURCES.txt
++++ b/wapiti3.egg-info/SOURCES.txt
+@@ -98,5 +98,3 @@ wapitiCore/report_template/logo_clear.pn
+ wapitiCore/report_template/report.html
+ wapitiCore/report_template/css/kube.min.css
+ wapitiCore/report_template/css/master.css
+-wapitiCore/report_template/js/jquery-2.1.4.min.js
+-wapitiCore/report_template/js/kube.min.js
+\ No newline at end of file

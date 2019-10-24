@@ -1,0 +1,170 @@
+wapiti (3.0.1+dfsg-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Raphaël Hertzog ]
+  * Update team maintainer address to Debian Security
+    Tools <team+pkg-security@tracker.debian.org>
+  * Update Vcs-Git and Vcs-Browser for the move to salsa.debian.org
+
+  [ Sophie Brun ]
+  * Exclude files from upstream tarball (*.min.js)
+  * Update debian/watch
+  * Import new upstream release, switch to bs4 (Closes: #891104)
+  * Switch to Python 3
+  * d/rules: update for new release, use pybuild
+  * Refresh patches
+  * Install upstream docs with setup.py
+  * Add a patch to fix typos in manpages
+  * d/rules: Change translations generations
+  * Update debian/copyright
+  * d/control: Update description package
+  * Add debian/missing-sources/*css
+  * Bump Standards-Version to 4.2.1 (no change required)
+  * Add a patch to remove mention of js files and remove useless link on jsquery
+
+ -- Sophie Brun <sophie@freexian.com>  Fri, 05 Oct 2018 09:30:06 +0200
+
+wapiti (2.3.0+dfsg-6) unstable; urgency=medium
+
+  * Add gbp.conf file
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Mon, 22 Aug 2016 17:10:47 +0200
+
+wapiti (2.3.0+dfsg-5) unstable; urgency=medium
+
+  * Move the packaging to pkg-security.
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Sat, 28 May 2016 09:55:41 +0200
+
+wapiti (2.3.0+dfsg-4) unstable; urgency=medium
+
+  * Bump std-version to 3.9.8, no changes required.
+  * Change section to web (Closes: #820391)
+    - thanks Ben Finney!
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Fri, 08 Apr 2016 12:16:00 +0200
+
+wapiti (2.3.0+dfsg-3) unstable; urgency=medium
+
+  * Bump std-version to 3.9.7, no changes required.
+  * Bump watch file version to 4.
+  * Fix insecure VCS fields lintian.
+  * Fix copyright license issue. (Closes: #816302).
+    - thanks Nicolás Alvarez for the useful bug report!
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Mon, 29 Feb 2016 18:19:01 +0100
+
+wapiti (2.3.0+dfsg-2) unstable; urgency=medium
+
+  * Move maintainership to myself.
+  * Update my uid.
+  * Bump Standard Version to 3.9.6, no changes required.
+  * Correctly use misc:Depends, avoid to manually include
+    runtime dependencies (beautifulsoup).
+  * Remove python minimal version required.
+  * Remove python-{lxml,httplib2} upstream doesn't use
+    them anymore.
+  * Add dh-python to b-d.
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Thu, 30 Jul 2015 11:03:38 +0200
+
+wapiti (2.3.0+dfsg-1) unstable; urgency=medium
+
+  * Set myself as maintainer (Closes: #700556).
+  * New upstream release.
+  * Bump Standard Version to 3.9.5, no changes required.
+  * Move homepage field in debian/control to the right place.
+  * Update debian/copyright.
+  * Drop patches not needed anymore
+    -fix-man-page.patch
+    -use-global-beautifulsoup.patch
+    -use-global-httplib2.patch
+    -use-local-scans-dir.patch
+    -remove-unused-js-scripts.patch
+  * Add install-changelog-once.patch, avoiding double
+    changelog installation.
+  * Patch refresh.
+  * Change rules file, dropping workarounds not needed anymore.
+  * Set Python Applications Packaging Team (PAPT) as maintainer.
+  * Move VCS to git under collab-maint.
+  * Generate translations and minified css at build time
+    (add yui-compressor and gettext as build dependencies).
+
+ -- Gianfranco Costamagna <costamagnagianfranco@yahoo.it>  Tue, 02 Sep 2014 15:49:25 +0200
+
+wapiti (2.2.1+dfsg-1) unstable; urgency=low
+
+  * QA upload.
+
+  [ Arthur de Jong ]
+  * New upstream release (Closes: #550072).
+  * Orphaning package (See: #700556).
+  * Drop no longer relevant recommends.
+  * Install wapiti-getcookie and wapiti-lswww commands.
+  * Update patches (drop most because no longer relevant).
+  * Install upstream manual page.
+  * Provide a get-orig-source target that drops the unused and non-free
+    json.js from the upstream tarball.
+  * Don't install bundled BeautifulSoup and httplib2 and instead use the
+    system ones.
+  * Disable the built-in Nikto plugin because of licensing issues of the
+    used database file.
+  * Install a README.Debian that explains the differences from upstream.
+  * Update debian/copyright file.
+  * Update debian/watch file.
+  * Update to Standards-Version to 3.9.4.
+  * Update package description.
+
+  [ Jakub Wilk ]
+  * Use canonical URIs for Vcs-* fields.
+
+ -- Arthur de Jong <adejong@debian.org>  Fri, 28 Jun 2013 15:14:56 +0200
+
+wapiti (1.1.6-4) unstable; urgency=low
+
+  * Team upload.
+
+  [ Jakub Wilk ]
+  * Remove unused Provides field from debian/control.
+
+  [ Jari Aalto ]
+  * Remove deprecated dpatch and upgrade to packaging format "3.0 quilt"
+    (Closes: #664377).
+  * Update to Standards-Version to 3.9.3 and debhelper to 9.
+
+  [ Arthur de Jong ]
+  * Switch to dh_python2 (Closes: #617144).
+  * Switch to dh command sequencer and install file with dh_install instead
+    of a custom setup.py.
+  * Update Vcs-Browser field.
+  * Fix spelling error and small wording change in manual page (thanks
+    lintian).
+  * Switch to machine-readable debian/copyright format.
+
+ -- Arthur de Jong <adejong@debian.org>  Fri, 06 Apr 2012 16:33:38 +0200
+
+wapiti (1.1.6-3) unstable; urgency=low
+
+  * Closes: #477034
+  	-> restructured debian/rules
+  * changing some rules in debian/rules
+  * watch-file added
+  * patches now handled by dpatch
+  * new Uploader: Python Applications Packaging Team
+
+ -- Thomas Bläsing <thomasbl@pool.math.tu-berlin.de>  Sat, 26 Apr 2008 12:04:20 +0000
+
+wapiti (1.1.6-2) unstable; urgency=low
+
+  * changed description ( Closes: #434804 )
+  * modified man-page.
+  * debianized warning output, if python-utidylib and python-ctypes are not installed.
+
+ -- Thomas Bläsing <thomasbl@pool.math.tu-berlin.de>  Mon, 30 Jul 2007 11:53:19 +0200
+
+wapiti (1.1.6-1) unstable; urgency=low
+
+  * Initial release (Closes: #381418)
+
+ -- Thomas Bläsing <thomasbl@pool.math.tu-berlin.de>  Thu, 28 Jun 2007 14:08:17 +0200

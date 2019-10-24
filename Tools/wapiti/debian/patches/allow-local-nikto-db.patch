@@ -1,0 +1,31 @@
+Description: Save and load the local Nikto database in Nikto format.
+Author: Arthur de Jong <adejong@debian.org>
+
+--- a/wapitiCore/attack/mod_nikto.py
++++ b/wapitiCore/attack/mod_nikto.py
+@@ -64,6 +64,7 @@ class mod_nikto(Attack):
+ 
+     def __init__(self, crawler, persister, logger, attack_options):
+         Attack.__init__(self, crawler, persister, logger, attack_options)
++        csv.register_dialect("nikto", quoting=csv.QUOTE_ALL, doublequote=False, escapechar="\\")
+         user_config_dir = os.getenv("HOME") or os.getenv("USERPROFILE")
+         user_config_dir += "/config"
+ 
+@@ -71,7 +72,7 @@ class mod_nikto(Attack):
+             os.makedirs(user_config_dir)
+         try:
+             with open(os.path.join(user_config_dir, self.NIKTO_DB)) as fd:
+-                reader = csv.reader(fd)
++                reader = csv.reader(fd, "nikto")
+                 self.nikto_db = [line for line in reader if line != [] and line[0].isdigit()]
+         except IOError:
+             # Disable downloading of Nikto database because the license of the file
+@@ -89,7 +90,7 @@ class mod_nikto(Attack):
+                 self.nikto_db = [line for line in reader if line != [] and line[0].isdigit()]
+ 
+                 with open(os.path.join(user_config_dir, self.NIKTO_DB), "w") as fd:
+-                    writer = csv.writer(fd)
++                    writer = csv.writer(fd, "nikto")
+                     writer.writerows(self.nikto_db)
+ 
+             except socket.timeout:

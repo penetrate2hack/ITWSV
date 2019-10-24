@@ -1,0 +1,24 @@
+Description: Avoid double changelog install
+ This patch avoids the double doc/ChangeLog_Wapiti /doc/changelog install,
+ spotted by a lintian warning.
+
+Author: Gianfranco Costamagna <locutusofborg@debian.org>
+
+--- a/setup.py
++++ b/setup.py
+@@ -9,15 +9,11 @@ doc_and_conf_files = [
+         DOC_DIR,
+         [
+             "doc/AUTHORS",
+-            "doc/ChangeLog_Wapiti",
+-            "doc/ChangeLog_lswww",
+             "doc/example.txt",
+-            "doc/FAQ.md",
+             "doc/wapiti.1.html",
+             "doc/wapiti.ronn",
+             "doc/wapiti-getcookie.1.html",
+             "doc/wapiti-getcookie.ronn",
+-            "INSTALL.md",
+             "README.md",
+             "VERSION"
+         ]

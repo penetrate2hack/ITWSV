@@ -1,0 +1,20 @@
+Description: Remove js mention in report.html
+ We removed the files *.min.js form the source because source code is
+ missing. Remove the mention of the file in the report.html to avoid
+ errors.
+Author: Sophie Brun <sophie@offensive-security.com>
+Last-Update: 2018-10-04
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/wapitiCore/report_template/report.html
++++ b/wapitiCore/report_template/report.html
+@@ -133,7 +133,5 @@
+         </div>
+         <footer class="small" id="footer"><a href="http://wapiti.sf.net/" id="wapiti_link">${wapiti_version}</a> &copy; Nicolas SURRIBAS 2006-2018</footer>
+ 	</div>
+-    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+-    <script type="text/javascript" src="js/kube.min.js"></script>
+ </body>
+-</html>
+\ No newline at end of file
++</html>

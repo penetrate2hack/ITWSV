@@ -1,0 +1,6 @@
+disable-nikto-download.patch
+allow-local-nikto-db.patch
+install-only-pertinent-docs.patch
+remove-jquery.patch
+fix-typos.patch
+remove-js-mentions.patch
