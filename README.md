@@ -3,7 +3,6 @@ ITWSV is automated penetration testing tool which performs information gathering
 
 # WARNING
 User of this tool, you agree that, if in any case, any offence is done then user himself would be responsible for charged with criminal or state law applicable by law enforcement officers and government.
-
 It is strictly suggested to use this tool for legitimate purpose and not for any offence/crime.
 
 # USAGE
