@@ -4,9 +4,9 @@ ITWSV is automated penetration testing tool which performs information gathering
 
 # WARNING
 
-•	User of this tool, you agree that, if in any case, any offence is done then user himself would be responsible for charged with criminal or state law applicable by law enforcement officers and government.
+-	User of this tool, you agree that, if in any case, any offence is done then user himself would be responsible for charged with criminal or state law applicable by law enforcement officers and government.
 
-•	It is strictly suggested to use this tool for legitimate purpose and not for any offence/crime.
+-	It is strictly suggested to use this tool for legitimate purpose and not for any offence/crime.
 
 # USAGE
 
@@ -29,68 +29,68 @@ version- 1.0 (First release)
 
 # TOOLS
 
-•	WHOIS
+-	WHOIS
 
-•	DNSWALK
+-	DNSWALK
 
-•	FIERCE 
+-	FIERCE 
 
-•	DNSRecon
+-	DNSRecon
 
-•	DNSenum
+-	DNSenum
 
-•	NMAP
+-	NMAP
 
-•	DMitry
+-	DMitry
 
-•	theHarvester
+-	theHarvester
 
-•	LBD
+-	LBD
 
-•	SSLScan
+-	SSLScan
 
-•	SSLYze
+-	SSLYze
 
-•	WhatWeb
+-	WhatWeb
 
-•	Automater
+-	Automater
 
-•	Grabber
+-	Grabber
 
-•	Parsero
+-	Parsero
 
-•	Uniscan
+-	Uniscan
 
-•	Metagoofil
+-	Metagoofil
 
-•	A2SV
+-	A2SV
 
-•	WPScan
+-	WPScan
 
-•	Droopescan 
+-	Droopescan 
 
-•	WPSeku
+-	WPSeku
 
-•	XssPy
+-	XssPy
 
-•	Spaghetti
+-	Spaghetti
 
-•	sublist3r
+-	sublist3r
 
-•	WAFW00F
+-	WAFW00F
 
-•	nslookup
+-	nslookup
 
-•	nslookup
+-	nslookup
 
-•	dirsearch
+-	dirsearch
 
-•	OWASP Joomscan
+-	OWASP Joomscan
 
-•	Spaghetti
+-	Spaghetti
 
-•	Globuster
+-	Globuster
 
-• Grabber
+- Grabber
 
 
