@@ -151,7 +151,7 @@ droopescan scan wordpress -u http://$target > $address/droopescan.txt
 droopescan scan joomla -u http://$target >> $address/droopescan.txt
 droopescan scan drupal -u http://$target >> $address/droopescan.txt
 droopescan scan silverstripe -u http://$target >> $address/droopescan.txt
-droopescan scan moodle -u http://$target >> $address/droopescan.txtq
+droopescan scan moodle -u http://$target >> $address/droopescan.txt
 echo "Droopscan scanning done..."
 
 #23-WPSeku
