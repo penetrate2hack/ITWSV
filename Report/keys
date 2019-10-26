@@ -1,0 +1,58 @@
+#! /bin/bash
+
+tail -n +1 dmitry.txt | grep -iE 'HostIP|HostName|Contact|Name Servers|Domain record activated|Domain record last updated|Domain expires|E-Mail|Portscan finished'>check.txt
+echo "-----------------------------------------------------------------------------------------------------------------------" >> check.txt
+
+tail -n +1 nmap.txt | grep -iE 'Discovered open port|Aggressive OS guesses' >> check.txt
+head -n +65 nmap.txt | tail -n +60 >> check.txt
+echo "-----------------------------------------------------------------------------------------------------------------------" >> check.txt
+
+head -n 42 theharvester.txt | tail -n +32 >> check.txt
+echo "-----------------------------------------------------------------------------------------------------------------------" >> check.txt
+
+head -n 28 sublist3r.txt | tail -n +22 >> check.txt
+echo "-----------------------------------------------------------------------------------------------------------------------" >> check.txt
+
+head -n 3 fierce.txt | tail -n +1 >> check.txt
+head -n 11 fierce.txt | tail -n +11 >> check.txt
+head -n 25 fierce.txt | tail -n +17 >> check.txt
+echo "-----------------------------------------------------------------------------------------------------------------------" >> check.txt
+
+tail -n +1  automater.txt | grep -iE 'results found in' >> check.txt
+echo "-----------------------------------------------------------------------------------------------------------------------" >> check.txt
+
+tail -n +1 lbd.txt | grep -iE 'Load-balancing|DNS-Loadbalancing|HTTP-Loadbalancing [Server]|HTTP-Loadbalancing [Diff]' >> check.txt
+echo "-----------------------------------------------------------------------------------------------------------------------" >> check.txt
+
+
+tail -n +1 dnswalk.txt | grep -iE 'zone transfer' >> check.txt
+echo "-----------------------------------------------------------------------------------------------------------------------" >> check.txt
+
+
+tail -n +1 droopescan.txt | grep -iE 'not running' >> check.txt
+echo "-----------------------------------------------------------------------------------------------------------------------" >> check.txt
+
+tail -n +1 dnsrecon.txt | grep -iE 'General Enumeration|not configured|Error|NS|Bind|TXT|SRV Records' >> check.txt
+echo "-----------------------------------------------------------------------------------------------------------------------" >> check.txt
+
+
+tail -n +1 wafw00f.txt | grep -iE 'is behind' >> check.txt
+echo "-----------------------------------------------------------------------------------------------------------------------" >> check.txt
+
+tail -n +1 a2sv.txt | grep -iE 'Vulnerability    CVE           CVSS v2 Base Score         State    |Vulnerable|Exception' >> check.txt
+echo "-----------------------------------------------------------------------------------------------------------------------" >> check.txt
+
+tail -n +1 nikto.txt | grep -iE 'Target Port|Server:|header is not present|header is not defined|header is not set|Directories found|Uncommon header|attackers|vulnerability|vulnerabilities|Control Panel|package installed|Mailman|should not allow directory listing|Directories found' >> check.txt
+echo "-----------------------------------------------------------------------------------------------------------------------" >> check.txt
+
+
+
+
+
+#tail -n +1 uniscan.txt | grep -iE 'https:|New target is:|Domain|Server|IP' >> check.txt
+#echo #"-----------------------------------------------------------------------------------------------------------------------" #>> check.txt
+
+
+
+
+
