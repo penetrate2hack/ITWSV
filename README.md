@@ -27,7 +27,7 @@ Supported Operating System- KALI Linux.
 version- 1.0 (First release)
 
 
-# TOOLS
+# TOOLS USED FOR PENTEST
 
 -	WHOIS
 
@@ -92,6 +92,16 @@ version- 1.0 (First release)
 -	Globuster
 
 - Grabber
+
+# OTHER TOOLS
+
+- Pureblood
+
+- Wapiti
+
+- Lscript
+
+- Trity
 
 # Screenshot
 
