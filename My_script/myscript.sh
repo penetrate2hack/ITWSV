@@ -18,7 +18,7 @@ echo ""
 echo "Enter domain of your Target Below"
 read target
 echo " "
-echo "Enter path of your output files example --> /root/Desktop/Project/Report"
+echo "Enter path of your output files example --> /root/Desktop/ITWSV/Report"
 read address
 
 
