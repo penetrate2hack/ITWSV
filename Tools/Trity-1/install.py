@@ -32,7 +32,7 @@ if option == "1":
     
     os.system('sudo apt-get install libjpeg-dev libfreetype6 zlib1g-dev')
     os.system('pip2.7 install --upgrade beautifulsoup4')
-    os.system('pip install search_google')
+    os.system('pip install google')
     os.system('pip install requests')
     os.system('pip install pythonwhois')
     os.system('pip2.7 install --upgrade html5lib')
