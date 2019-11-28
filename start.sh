@@ -57,7 +57,7 @@ elif [[ "$target" = 3 ]]
 	./install.sh
 	cd ..
 	cd ..
-else echo "Not so good"
+else echo "Incorrect Entry"
 fi
 	
 
