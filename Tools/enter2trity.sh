@@ -43,4 +43,4 @@ echo "decode hex- hex to text"
 echo "+----------------------------+"
 
 cd Trity-1
-python trity.py
+trity
