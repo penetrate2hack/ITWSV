@@ -34,7 +34,8 @@ if [[ "$target" = 1 ]]
 elif [[ "$target" = 2 ]]
 	then ./update.sh
 elif [[ "$target" = 3 ]]
-	then chmod +x requirements.txt
+	then chmod +x update.sh
+	chmod +x requirements.txt
 	pip install -r requirements.txt
 	cd Tools 
 	cd Trity-1
